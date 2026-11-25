@@ -1,0 +1,379 @@
+:where(.convaincre-connect-widget),
+:where(.convaincre-connect-widget *) {
+  box-sizing: border-box;
+}
+
+:where(.convaincre-connect-widget) {
+  width: min(100%, 760px);
+  margin: 1.5rem auto;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  line-height: inherit;
+}
+
+:where(.convaincre-connect-widget__header) {
+  margin-bottom: 1.35rem;
+}
+
+:where(.convaincre-connect-widget__eyebrow) {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.55rem;
+  padding: 0.22em 0.55em;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: inherit;
+  font: inherit;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  opacity: 0.72;
+}
+
+:where(.convaincre-connect-widget__title) {
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+:where(.convaincre-connect-widget__intro) {
+  max-width: 60ch;
+  margin: 0.65rem 0 0;
+  color: inherit;
+  font: inherit;
+  opacity: 0.72;
+}
+
+:where(.convaincre-connect-form) {
+  margin: 0;
+}
+
+:where(.convaincre-connect-form__grid) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+:where(.convaincre-connect-field) {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: 0.38rem;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+:where(.convaincre-connect-field--half) {
+  grid-column: span 1;
+}
+
+:where(.convaincre-connect-field__label) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+}
+
+:where(.convaincre-connect-required) {
+  color: inherit;
+}
+
+:where(.convaincre-connect-field input),
+:where(.convaincre-connect-field select),
+:where(.convaincre-connect-field textarea),
+:where(.convaincre-connect-question select) {
+  width: 100%;
+  min-height: 2.8rem;
+  margin: 0;
+  font: inherit;
+}
+
+:where(.convaincre-connect-field textarea) {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+:where(.convaincre-connect-question) {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: 0.72rem;
+  margin: 0;
+  padding: 1rem 0;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  color: inherit;
+  background: transparent;
+}
+
+:where(fieldset.convaincre-connect-question) {
+  min-width: 0;
+}
+
+:where(.convaincre-connect-question legend) {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+}
+
+:where(.convaincre-connect-question__hint) {
+  margin: -0.25rem 0 0;
+  color: inherit;
+  font: inherit;
+  font-size: 0.86em;
+  opacity: 0.68;
+}
+
+:where(.convaincre-connect-question__choices) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+:where(.convaincre-connect-question__choice) {
+  display: flex;
+  align-items: center;
+  min-height: 2.8rem;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+
+:where(.convaincre-connect-question__choice input) {
+  flex: 0 0 auto;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0;
+}
+
+:where(.convaincre-connect-question__scale) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  gap: 0.45rem;
+}
+
+:where(.convaincre-connect-question__scale-option) {
+  position: relative;
+  display: grid;
+  min-height: 3rem;
+  place-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+:where(.convaincre-connect-question__scale-option input) {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+:where(.convaincre-connect-question__scale-option span) {
+  display: grid;
+  width: 100%;
+  min-height: 3rem;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 0.35em;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  opacity: 0.72;
+}
+
+:where(.convaincre-connect-question__scale-option input:checked + span) {
+  opacity: 1;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+
+:where(.convaincre-connect-question__ranking) {
+  display: grid;
+  gap: 0.55rem;
+}
+
+:where(.convaincre-connect-question__rank) {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, auto) minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: center;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+
+:where(.convaincre-connect-form__consents) {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  color: inherit;
+  background: transparent;
+}
+
+:where(.convaincre-connect-consent) {
+  display: grid;
+  grid-template-columns: 1.15rem minmax(0, 1fr);
+  gap: 0.62rem;
+  align-items: start;
+  margin: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9em;
+}
+
+:where(.convaincre-connect-consent input) {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0.15rem 0 0;
+}
+
+:where(.convaincre-connect-form__footer) {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1.1rem;
+}
+
+:where(.convaincre-connect-submit) {
+  min-height: 2.8rem;
+  padding-inline: 1.2rem;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+}
+
+:where(.convaincre-connect-form__privacy) {
+  display: block;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8em;
+  line-height: 1.4;
+  opacity: 0.65;
+}
+
+:where(.convaincre-connect-message) {
+  margin: 0 0 1rem;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid currentColor;
+  border-radius: 0.35em;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+}
+
+:where(.convaincre-connect-message--success) {
+  color: #1e6945;
+}
+
+:where(.convaincre-connect-message--warning) {
+  color: #7a5018;
+}
+
+:where(.convaincre-connect-message--error) {
+  color: #8b3038;
+}
+
+:where(.convaincre-connect-honeypot) {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 640px) {
+  :where(.convaincre-connect-widget) {
+    margin: 1rem auto;
+  }
+
+  :where(.convaincre-connect-form__grid),
+  :where(.convaincre-connect-question__choices) {
+    grid-template-columns: 1fr;
+  }
+
+  :where(.convaincre-connect-field--half) {
+    grid-column: 1 / -1;
+  }
+
+  :where(.convaincre-connect-question__rank) {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}
+
+/* Explicit overrides only. Existing sites keep the original theme inheritance. */
+.convaincre-connect-widget.convaincre-connect-widget--styled {
+  width: min(100%, var(--cc-width));
+  padding: var(--cc-spacing);
+  background: var(--cc-bg);
+  color: var(--cc-text);
+  font-family: var(--cc-font);
+  font-size: var(--cc-size);
+  border-radius: var(--cc-radius);
+}
+.convaincre-connect-widget--styled .convaincre-connect-widget__title,
+.convaincre-connect-widget--styled .convaincre-connect-widget__intro,
+.convaincre-connect-widget--styled .convaincre-connect-field__label,
+.convaincre-connect-widget--styled .convaincre-connect-consent,
+.convaincre-connect-widget--styled .convaincre-connect-question legend {
+  color: var(--cc-text);
+  font-family: inherit;
+}
+.convaincre-connect-widget--styled .convaincre-connect-form__grid {
+  gap: var(--cc-spacing);
+}
+.convaincre-connect-widget--styled .convaincre-connect-field input:not([type="checkbox"]):not([type="radio"]):not([type="hidden"]),
+.convaincre-connect-widget--styled .convaincre-connect-field select,
+.convaincre-connect-widget--styled .convaincre-connect-field textarea,
+.convaincre-connect-widget--styled .convaincre-connect-question select {
+  background: var(--cc-field);
+  color: var(--cc-field-text);
+  border: 1px solid var(--cc-border);
+  border-radius: var(--cc-radius);
+  padding: .65em .8em;
+  font: inherit;
+}
+.convaincre-connect-widget--styled .convaincre-connect-submit,
+.convaincre-connect-widget--styled .convaincre-connect-submit:hover,
+.convaincre-connect-widget--styled .convaincre-connect-submit:active {
+  background: var(--cc-primary);
+  color: var(--cc-button-text);
+  border: 1px solid var(--cc-primary);
+  border-radius: var(--cc-radius);
+  font: inherit;
+  font-weight: 700;
+}
+.convaincre-connect-widget--styled input[type="checkbox"],
+.convaincre-connect-widget--styled input[type="radio"] {
+  accent-color: var(--cc-primary);
+}
+.convaincre-connect-widget--styled :is(input, textarea, select, button):focus-visible,
+.convaincre-connect-widget--styled .convaincre-connect-question__scale-option input:focus-visible + span {
+  outline: 2px solid var(--cc-text);
+  outline-offset: 3px;
+}
+
+.convaincre-connect-conditional { grid-column: 1 / -1; padding: 0; margin: 0; border: 0; min-width: 0; }
+.convaincre-connect-conditional[hidden] { display: none !important; }
+
+.convaincre-connect-step { grid-column: 1 / -1; display: grid; gap: var(--cc-spacing, 1rem); min-width: 0; }
+.convaincre-connect-step[hidden], .convaincre-connect-steps[hidden], .convaincre-connect-steps__navigation[hidden], .convaincre-connect-steps__navigation button[hidden], .convaincre-connect-submit[hidden] { display: none !important; }
+.convaincre-connect-steps progress { width: 100%; }
+.convaincre-connect-steps__navigation { display: flex; flex-wrap: wrap; gap: .75rem; }

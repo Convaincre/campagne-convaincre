@@ -1,0 +1,6 @@
+/dist/
+.env
+.env.*
+*.log
+wp-config.php
+.DS_Store
